@@ -46,11 +46,13 @@ class ProjectCardWidget extends StatelessWidget {
           // subtitle
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-            child: Text(
-              project.subtitle,
-              style: const TextStyle(
-                fontSize: 12,
-                color: CustomColor.whiteSecondary,
+            child: Expanded(
+              child: Text(
+                project.subtitle,
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: CustomColor.whiteSecondary,
+                ),
               ),
             ),
           ),
@@ -72,22 +74,22 @@ class ProjectCardWidget extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                if (project.iosLink != null)
+                if (project.apkLink != null)
                   InkWell(
                     onTap: () {
-                      js.context.callMethod("open", [project.iosLink]);
+                      js.context.callMethod("open", [project.apkLink]);
                     },
                     child: Image.asset(
                       "assets/ios_icon.png",
                       width: 19,
                     ),
                   ),
-                if (project.androidLink != null)
+                if (project.gitLink != null)
                   Padding(
                     padding: const EdgeInsets.only(left: 6),
                     child: InkWell(
                       onTap: () {
-                        js.context.callMethod("open", [project.androidLink]);
+                        js.context.callMethod("open", [project.gitLink]);
                       },
                       child: Image.asset(
                         "assets/android_icon.png",
@@ -95,12 +97,12 @@ class ProjectCardWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                if (project.webLink != null)
+                if (project.screenshots != null)
                   Padding(
                     padding: const EdgeInsets.only(left: 6),
                     child: InkWell(
                       onTap: () {
-                        js.context.callMethod("open", [project.webLink]);
+                        js.context.callMethod("open", [project.screenshots]);
                       },
                       child: Image.asset(
                         "assets/web_icon.png",

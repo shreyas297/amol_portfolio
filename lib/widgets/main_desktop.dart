@@ -27,7 +27,7 @@ class MainDesktop extends StatelessWidget {
             children: [
               // intro message
               const Text(
-                "Hi,\nI'm Shohruh AK\nA Flutter Developer",
+                "Hi,\nI'm Amol Lokhande\nA Flutter Developer",
                 style: TextStyle(
                   fontSize: 30,
                   height: 1.5,
@@ -47,10 +47,15 @@ class MainDesktop extends StatelessWidget {
             ],
           ),
           // avatar img
-          Image.asset(
-            "assets/my_flutter_avatar.png",
-            width: screenWidth / 2,
-          ),
+          ClipRRect(
+  borderRadius: BorderRadius.circular(16),
+  child: Image.asset(
+    "assets/profile_img.jpg",
+    height: 300,
+    width: 300,
+    fit: BoxFit.cover,
+  ),
+),
         ],
       ),
     );

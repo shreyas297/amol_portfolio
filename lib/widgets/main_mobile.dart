@@ -33,15 +33,20 @@ class MainMobile extends StatelessWidget {
               ]).createShader(bounds);
             },
             blendMode: BlendMode.srcATop,
-            child: Image.asset(
-              "assets/my_flutter_avatar.png",
-              width: screenWidth,
-            ),
+            child: ClipRRect(
+  borderRadius: BorderRadius.circular(16),
+  child: Image.asset(
+    "assets/profile_img.jpg",
+    height: 300,
+    width: 300,
+    fit: BoxFit.cover,
+  ),
+),
           ),
           const SizedBox(height: 30),
           // intro message
           const Text(
-            "Hi,\nI'm Shohruh AK\nA Flutter Developer",
+            "Hi,\nI'm Amol Lokhande\nA Flutter Developer",
             style: TextStyle(
               fontSize: 24,
               height: 1.5,

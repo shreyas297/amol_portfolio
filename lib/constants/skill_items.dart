@@ -7,17 +7,21 @@ const List<Map> platformItems = [
     "img": "assets/web_icon.png",
     "title": "Web Dev",
   },
-  {
-    "img": "assets/ios_icon.png",
-    "title": "IOS Dev",
-  },
-  {
-    "img": "assets/desktop_icon.png",
-    "title": "Desktop Dev",
-  }
+  // {
+  //   "img": "assets/ios_icon.png",
+  //   "title": "IOS Dev",
+  // },
+  // {
+  //   "img": "assets/desktop_icon.png",
+  //   "title": "Desktop Dev",
+  // }
 ];
 
 const List<Map> skillItems = [
+    {
+    "img": "assets/java.png",
+    "title": "Java",
+  },
   {
     "img": "assets/flutter.png",
     "title": "Flutter",
@@ -27,21 +31,26 @@ const List<Map> skillItems = [
     "title": "Dart",
   },
   {
-    "img": "assets/html5.png",
-    "title": "HTML5",
+    "img": "assets/bloc.png",
+    "title": "Bloc",
   },
   {
-    "img": "assets/css3.png",
-    "title": "CSS3",
+    "img": "assets/dart.png",
+    "title": "Provider",
   },
-  {
-    "img": "assets/javascript.png",
-    "title": "JS",
-  },
-  {
-    "img": "assets/hugo.png",
-    "title": "Hugo",
-  },
+  // {
+  //   "img": "assets/html5.png",
+  //   "title": "HTML5",
+  // },
+  // {
+  //   "img": "assets/css3.png",
+  //   "title": "CSS3",
+  // },
+  // {
+  //   "img": "assets/javascript.png",
+  //   "title": "JS",
+  // },
+  
   {
     "img": "assets/docker.png",
     "title": "Docker",
